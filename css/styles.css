@@ -1,0 +1,41 @@
+body{
+    padding: 20px 30px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    row-gap: 50px;
+    column-gap: 50px;
+    padding: 50px;
+}
+
+div a, img{
+    width: 100%;
+    max-width: 215px;
+    display: block;
+}
+
+header div{
+    margin: 0 auto;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    padding: 30px;
+}
+
+#search-bar{
+    flex-grow: 1;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(198, 198, 197);
+} 
+
+#search-bar:focus{
+    border-color: rgb(0, 81, 128);
+    outline: none;
+}
+
+#search-bar:hover{
+    background-color:rgb(229, 222, 222);
+}
+
